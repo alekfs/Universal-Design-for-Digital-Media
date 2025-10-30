@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <!-- I included the body element below which is not part of the html version or the head to make
+    make sure you include it above your HTML code -->
+  <body>
+    <header>
+        <h1>Alek’s First Web Page</h1>
+    </header>
+  
+      <main>
+        <article aria-labelledby="rides">
+          <h2 id="rides">Favorite Boulder-Area Rides</h2>
+          <p>Here are a few local rides I love. I’m using semantic HTML to structure the content (headings, lists, sections) 
+            as introduced in the MDN “Getting started with HTML” lesson.</p>
+  
+          <section>
+            <h3>1) Super Betasso  <span class="tag">MTB</span></h3>
+            <p><span class="rating" aria-label="5 out of 5">★★★★★</span> Smooth flow with punchy climbs.</p>
+            <ul>
+              <li><strong>Distance:</strong> ~30 km</li>
+              <li><strong>Best time:</strong> Evening golden hour</li>
+              <li><strong>Why it’s great:</strong> Flowy descents with tight corners and technical descent to the bottom.</li>
+            </ul>
+            <img src="img/Betasso.PNG" alt="Betasso ride details" style="width:400px;height:500px;">
+          </section>
+  
+          <section>
+            <h3>2) Flagstaff <span class="tag">Road</span></h3>
+            <p><span class="rating" aria-label="5 out of 5">★★★★★</span> A classic Boulder climb with rewarding views of the Flatirons.</p>
+            <ul>
+              <li><strong>Distance:</strong> ~20 km</li>
+              <li><strong>Elevation gain:</strong> 1000+ m</li>
+              <li><strong>Why it’s great:</strong> Great workout and an amazing climb right outside of Boulder. 
+                Such a fun descent back into towm.</li>
+            </ul>
+            <img src="img/Flag.PNG" alt="Flagstaff ride details" style="width:400px;height:500px;">
+          </section>
+  
+          <section>
+            <h3>3) Switzerland Trail <span class="tag">Gravel</span></h3>
+            <p><span class="rating" aria-label="5 out of 5">★★★★★</span> Historic railroad grades with big Front Range views.</p>
+            <ul>
+              <li><strong>Surface:</strong> Chunky gravel / 4x4 road</li>
+              <li><strong>Bike:</strong> 40–50c tires recommended</li>
+              <li><strong>Why it’s great:</strong> Technical gravel ride in the front range with great views. 
+                Bonus: climb up to goldhill for an amazing home made cookies at the general store.</li>
+            </ul>
+            <img src="img/Switz.PNG" alt="Switzerland Trail ride details"  style="width:400px;height:500px;">
+          </section>
+        </article>
+      </main>
+  </body>
+  </html>
