@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* layout */
+#wrapper {
+  width: 60%;
+  margin-left: 4%;
+  max-width: 900px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.35;
+}
+
+#proposal2020 {
+  padding-bottom: 1rem;
+}
+
+div#formcol1 {
+  float: left;
+  width: 100%;
+}
+
+/* list + spacing */
+#formcol1 li {
+  list-style: none;
+  margin: 0 0 .6rem 0;
+}
+
+/* labels aligned right */
+label {
+  margin-right: .5em;
+  width: 10em;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* inputs */
+input[type="text"] {
+  padding: .45rem .55rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  max-width: 28rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* required-field */
+#formcol1 input.reqfield {
+  background: #FF9;
+}
+
+/* keyboard/mouse focus highlighting */
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+  color: #FFF !important;
+  background-color: #BB3D2F !important;
+  outline: 2px solid #aa8480;
+  outline-offset: 2px;
+}
+
+/* submit */
+.submit-button input[type="submit"] {
+  padding: .6rem .9rem;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  background: #2d2d2d;
+  color: #fff;
+  cursor: pointer;
+}
+.submit-button input[type="submit"]:focus {
+  outline: 2px solid #BB3D2F;
+  outline-offset: 2px;
+}
+
+/* small-screen niceties */
+@media (max-width: 700px) {
+  label {
+    width: 8.5em;
+  }
+  #wrapper {
+    width: 92%;
+    margin-left: 4%;
+  }
+}
